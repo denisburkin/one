@@ -1,0 +1,57 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+
+  Developer: Denis Burkin
+  Site: http://denisburkin.ru
+  Twitter: @denisburkin
+  Location: Murmansk, Russia
+
+  Designer: Denis Burkin
+  Site: https://twitter.com/FFKRS
+  Twitter: @denisburkin
+  Location: Murmansk, Russia
+
+/* SITE */
+Last update: 2014/01/23
+Language: Russia
+Doctype: HTML5
+Standards: HTML, CSS3
+Components: jQuery, Twitter Bootstrap
+Runs on: Kohana Framework, PHP, MySQL
+IDE: PhpStorm, Photoshop CS6
+
+
+                               -+ooooooooo/`
+                           :ss/.        `-oy+`
+                         :h/   `-//++/:.    -yo`
+                        ss`  -oyyyyyyyyyy+`   :d.
+                       os   +yyyyyyyyyyyss+    -d`
+                      .m   +yyyyyy+-`           os
+                      +s   yyyyyy:              -d
+                  `:ohNy   yyyyys               -d
+              -+ymNNNmhm`  :yyyy+               oo
+         `:ohNmhs+:.   oy   -syy/              :d`
+     -+syyo/-`          oy`   -+.             /h`
+`.-:/-`                  -h+`               :y+
+                         `dmss/.        `:os/`
+                        .my`  ./ooyhhhds+:`
+                       -d:        oNNNm
+                      /s`         sNNNo
+                     /:           yNNN-
+                    -`            dNNd
+                                  mNN+
+                                  NNN.
+                                 `NNh
+                                 .NN/
+                                 -NN`
+                                 /Ny
+                                 +N:
+                                 om
+                                 ss
+                                 y-
+                                 y
+                                 /
+                                 `
