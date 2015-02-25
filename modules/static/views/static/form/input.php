@@ -1,0 +1,1 @@
+<input id="<?=$id?>" class="form-control<?=isset($class)?' '.$class:''?>" type="text" name="<?=$id?>" placeholder="<?=$placeholder?>" value="<?=htmlspecialchars($static->$id)?>" <?if(isset($noview)&&$noview){echo('style="display: none"');}?>/>

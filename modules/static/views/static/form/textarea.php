@@ -1,0 +1,1 @@
+<textarea id="<?=$id?>" class="form-control<?=isset($class)?' '.$class:''?>" name="<?=$id?>" placeholder="<?=$placeholder?>"><?=$static->$id?></textarea>
