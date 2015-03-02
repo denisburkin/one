@@ -31,6 +31,6 @@ return
 		),
 		'layout' => array
 		(
-			1 => 'themes/turbion/index'
+			1 => 'themes/eurofish/index'
 		)
 	);

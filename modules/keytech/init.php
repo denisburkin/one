@@ -13,12 +13,12 @@
 /*
  * Вход и выход
  */
-Route::set('keytech/logout', 'logout')->defaults(array(
+Route::set('keytech/logout', '(<lang>)(/)logout')->defaults(array(
 	'controller' => 'keytech',
 	'action'     => 'logout'
 ));
 
-Route::set('keytech/login', 'login')->defaults(array(
+Route::set('keytech/login', '(<lang>)(/)login')->defaults(array(
 	'controller' => 'keytech',
 	'action'     => 'login'
 ));

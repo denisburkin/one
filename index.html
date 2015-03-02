@@ -1,11 +1,167 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="ru">
 	<meta charset="UTF-8">
-	<title></title>
+	<!-- Bootstrap core CSS -->
+	<link href="public/vendor/bootstrap-3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="public/css/style.css" rel="stylesheet">
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<title>
+
+
+	</title>
 </head>
 <body>
+<script>
+	$(document).ready(function(){
 
+
+		$('html').mousemove(function(e){
+			$('body').css('background',' url(public/img/background_ship.jpg) center bottom  -' + e.pageY/30 + 'px  no-repeat fixed ');
+		});
+
+		$('#tab_bottom').click(function(e)
+		{
+			$( this ).toggleClass( "hides" );
+
+			$('.tabinfo').hide();
+
+			if(!$('#tab_bottom').hasClass('hides'))
+			{
+			 	$('.t1').show();
+			}
+		});
+
+		$('.tabinfo').hide();
+		$('.t1').show();
+
+		$('.ship').click(function(e)
+		{
+			$('.ship').removeClass('selected');
+			$(this).addClass('selected');
+
+			if($('#tab_bottom').hasClass('hides'))
+			{
+				$('#tab_bottom').click();
+			}
+
+			$('.tabinfo').hide();
+			$('.'+ $(this).data('id')).show();
+		});
+
+	});
+
+</script>
+<div id="head">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+				<img src="public/img/logo.png" alt=""/>
+
+				<div id="menu1">
+					<a href="#">Форма обратной связи</a> <a href="#">Вход для сотрудников</a>
+					<a href="#">English version</a>
+				</div>
+
+				<div id="menu2">
+					<a href="#">Продукция и производство</a> <a href="#">Районы промысла</a>
+					<a href="#">Сбыт продукции</a> <a href="#">О компании</a> <a href="#">Контакты</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+				<div id="tab">
+
+					<div id="tab_bottom">
+						<span>Cвернуть описание</span>
+					</div>
+
+
+
+					<div class="col-md-5 tabinfo t1" style="text-align: center">
+						<div style="display:table-cell; vertical-align:middle; height: 300px;">
+							<img src="public/img/ship01.png" alt=""/>
+						</div>
+					</div>
+
+					<div class="col-md-7 tabinfo t1" >
+						<div style="display:table-cell; vertical-align:middle; height: 300px;">
+							<h2>Taurus МК-0411</h2>
+							Завод-строитель Николаевский-на-Амуре судостроительный завод, СССР. Назначение судна — экспедиционный лов рыбы кошельковым неводом, пелагическим или донным тралом и снюрреводом; кратковременное хранение улова в свежем или охлажденном виде до передачи на рыбоперерабатывающие суда.
+							<div style="text-align: right"><a href="#">Смотреть все характеристики</a></div>
+						</div>
+					</div>
+
+
+					<div class="col-md-5 tabinfo t2" style="text-align: center"><div style="display:table-cell; vertical-align:middle; height: 300px;"><img src="public/img/ship02.png" alt=""/></div></div>
+					<div class="col-md-7 tabinfo t2" ><div style="display:table-cell; vertical-align:middle; height: 300px;"><h2>Taurus МК-0412</h2>Завод-строитель Николаевский-на-Амуре судостроительный завод, СССР. Назначение судна — экспедиционный лов рыбы кошельковым неводом, пелагическим или донным тралом и снюрреводом; кратковременное хранение улова в свежем или охлажденном виде до передачи на рыбоперерабатывающие суда.<div style="text-align: right"><a href="#">Смотреть все характеристики</a></div></div></div>
+
+					<div class="col-md-5 tabinfo t3" style="text-align: center"><div style="display:table-cell; vertical-align:middle; height: 300px;"><img src="public/img/ship03.png" alt=""/></div></div>
+					<div class="col-md-7 tabinfo t3" ><div style="display:table-cell; vertical-align:middle; height: 300px;"><h2>Taurus МК-0413</h2>Завод-строитель Николаевский-на-Амуре судостроительный завод, СССР. Назначение судна — экспедиционный лов рыбы кошельковым неводом, пелагическим или донным тралом и снюрреводом; кратковременное хранение улова в свежем или охлажденном виде до передачи на рыбоперерабатывающие суда.<div style="text-align: right"><a href="#">Смотреть все характеристики</a></div></div></div>
+
+					<div class="col-md-5 tabinfo t4" style="text-align: center"><div style="display:table-cell; vertical-align:middle; height: 300px;"><img src="public/img/ship02.png" alt=""/></div></div>
+					<div class="col-md-7 tabinfo t4" ><div style="display:table-cell; vertical-align:middle; height: 300px;"><h2>Taurus МК-0414</h2>Завод-строитель Николаевский-на-Амуре судостроительный завод, СССР. Назначение судна — экспедиционный лов рыбы кошельковым неводом, пелагическим или донным тралом и снюрреводом; кратковременное хранение улова в свежем или охлажденном виде до передачи на рыбоперерабатывающие суда.<div style="text-align: right"><a href="#">Смотреть все характеристики</a></div></div></div>
+
+
+					<div class="col-md-12" style="background-color: #fff;padding-left: 0px; padding-right: 0px"><div class="ship selected"  data-id="t1">
+
+						<div>
+							TAURUS MK-0411
+						</div>
+						</div><div class="ship" data-id="t2">
+
+							<div style=" background-image: url(public/img/ship02.png);">
+								TAURUS MK-0411
+							</div>
+						</div><div class="ship" data-id="t3">
+
+						<div style=" background-image: url(public/img/ship03.png);">
+							TAURUS MK-0411
+						</div>						</div><div class="ship" data-id="t4">
+
+						<div style=" background-image: url(public/img/ship01.png);">
+							TAURUS MK-0411
+						</div>
+						</div></div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-12  blocks">
+				<div>
+					<img src="public/img/ficon01.gif" alt=""/>
+					<span>ЗАО Стрелец, Феникс,<br/>Таурус, Эридан © 2015</span>
+				</div>
+				<div>
+					<img src="public/img/ficon02.gif" alt=""/>
+					<span><a href="#">Адреса и контакты</a></span>
+				</div>
+				<div>
+					<img src="public/img/ficon03.gif" alt=""/>
+					<span>Пишите нам: <a href="mailto:eurofish@uk.msk.ru">eurofish@uk.msk.ru</a></span>
+				</div>
+				<div>
+					<img src="public/img/ficon04.gif" alt=""/>
+					<span><strong>8 800 333-00-65</strong>&nbsp; &nbsp;&nbsp;Сделано в <a href="http://turbion.net/ru/"> «Турбион»</a> </span>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
 
 </body>
 </html>

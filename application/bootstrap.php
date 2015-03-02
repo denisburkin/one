@@ -142,44 +142,15 @@ if (!empty($langs_abr))
 Kohana::modules(array(
 	 'auth'       => MODPATH.'auth',       // Basic authentication
 	 'cache'      => MODPATH.'cache',      // Caching with multiple backends
-	// 'codebench'  => MODPATH.'codebench',  // Benchmarking tool
 	 'database'   => MODPATH.'database',   // Database access
 	 'image'      => MODPATH.'image',      // Image manipulation
-	// 'minion'     => MODPATH.'minion',     // CLI Tasks
 	 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
-	// 'unittest'   => MODPATH.'unittest',   // Unit testing
-	 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
 	 'keytech'    => MODPATH.'keytech',  // User guide and API documentation
 	 'static'     => MODPATH.'static',  // User guide and API documentation
      'album'      => MODPATH.'album',
      'pagination'      => MODPATH.'pagination',
-//     'logviewer'  => MODPATH.'logviewer',
 	));
 
-
-/**
- * Set the routes. Each route must have a minimum of a name, a URI and a set of
- * defaults for the URI.
- */
-Route::set('news', 'news(/<page>)',
-		   array('id' => '[1-9][0-9]*')
-)
-	 ->defaults(
-	 array(
-		  'controller' => 'main',
-		  'action'     => 'index',
-		  'page'     => 1
-	 )
-	);
-
-Route::set('lobby', 'lobby(/<page>)',
-		   array('id' => '[1-9][0-9]*'))
-	 ->defaults(
-	 array(
-		  'controller' => 'lobby',
-		  'action'     => 'index',
-		  'page'       => 1
-	 ));
 /**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
@@ -194,13 +165,3 @@ Route::set('default', '((<lang>)(/)(<controller>)(/<action>(/<id>)))',
 					 'controller' => 'main',
 					 'action'     => 'index',
 				));
-
-//Route::set('default', '((<controller>)(/<action>(/<id>)))',
-//		   array(
-//				'id'   => '[0-9]+',
-//				'id2'  => '[0-9]+'
-//		   ))
-//	 ->defaults(array(
-//					 'controller' => 'main',
-//					 'action'     => 'index',
-//				));

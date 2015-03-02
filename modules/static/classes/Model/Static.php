@@ -95,7 +95,7 @@ class Model_Static extends ORM
     {
         if($date)
         {
-            $date = DateTime::createFromFormat('!d.m.Y H:i', $date);
+            $date = DateTime::createFromFormat('!d.m.Y', $date);
             return date_format($date, 'U');
         }
     }

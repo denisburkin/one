@@ -5,17 +5,16 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    <link rel="stylesheet" href="/this/vendor/bootstrap/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="/this/css/admin/admin.css"/>
+    <link rel="stylesheet" href="/public/vendor/bootstrap-3.3.2/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/public/cms/css/admin.css"/>
 
-	<script type="text/javascript" src="/this/vendor/jquery-1.8.2.min.js"></script>
-	<script type="text/javascript" src="/this/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/public/vendor/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="/public/vendor/bootstrap-3.3.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-<div id="menu" class="buttons">
-</div>
+<div id="menu" class="buttons"></div>
 
 <div class="container" id="container">
 	<div style="height: 55px;"></div>

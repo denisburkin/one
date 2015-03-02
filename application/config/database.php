@@ -8,9 +8,9 @@ return array
 		'connection'   => array(
 			'hostname'   => 'localhost',
 
-			'database'   => '',
-			'username'   => '',
-			'password'   => '',
+			'database'   => 'classicvin_eurof',
+			'username'   => 'classicvin_eurof',
+			'password'   => 'vuXzYW6j',
 
 			'persistent' => FALSE,
 		),

@@ -9,7 +9,7 @@ return array(
 	'session_key'  => 'auth_user',
 	'hash_key'     => 'nsKAagNWZUZ1uBYb5n5xUtVJISqTCjirkfkI7hNdr6F12Ar9shmRRy9RXzISMLH',
 	'users' => array(
-		'admin' => '1c06666e53a4983f16c2b2c314b08819',
+		'admin' => '60ebc5d37bd4447122d9479f446b560e',
 	),
 
 );

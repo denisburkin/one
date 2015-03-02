@@ -180,7 +180,6 @@ class Controller_Admin_Static extends Keytech
     {
         $id = Arr::get($_POST, 'id');
         $material = ORM::factory('Static', $id);
-        if($id == 'undefined'){$material->dates = date('d.m.Y H:i', time());};
         $tree_id = Arr::get($_POST, 'tree_id');
         $config = Kohana::$config->load('static');
         $views[] = "";
@@ -252,17 +251,6 @@ class Controller_Admin_Static extends Keytech
                     {
                         $tags = explode(',', Arr::get($_POST, $add['id']));
                     }
-                    else if($add['form'] == 'checkbox')
-                    {
-                        if(Arr::get($_POST, $add['id']))
-                        {
-                            $material->$add['id'] = Arr::get($_POST, $add['id']);
-                        }
-                        else
-                        {
-                            $material->$add['id'] = 0;
-                        }
-                    }
                     else
                     {
                         $material->$add['id'] = Arr::get($_POST, $add['id']);
@@ -304,7 +292,7 @@ class Controller_Admin_Static extends Keytech
             $dir = './public/static/';
             $filename = Upload::save($_FILES[$input], 'my_temp_image.png', $dir, 0777);
             $img      = Image::factory($filename);
-            $img->resize(NULL, 500, Image::HEIGHT);
+            $img->resize(1920, NULL, Image::WIDTH);
             $img->save($dir . $id . '.jpg', 90);
             unlink($filename);
         }

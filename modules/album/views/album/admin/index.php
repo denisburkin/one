@@ -52,23 +52,23 @@
     </div>
 
     <div id="header_content">
-        <div class="block check1"><span class="glyphicon glyphicon-custom"><img src="/public/img/admin/check_all.png"></span>
+        <div class="block check1"><span class="glyphicon glyphicon-custom"><img src="/public/cms/img/check_all.png"></span>
             <div class="text">Выделить всё</div>
         </div>
-        <div class="block uncheck"><span class="glyphicon glyphicon-custom"><img src="/public/img/admin/uncheck.png"></span>
+        <div class="block uncheck"><span class="glyphicon glyphicon-custom"><img src="/public/cms/img/uncheck.png"></span>
             <div class="text">Снять выделение</div>
         </div>
-        <div class="block deletephoto"><span class="glyphicon glyphicon-custom"><img src="/public/img/admin/del.png"></span>
+        <div class="block deletephoto"><span class="glyphicon glyphicon-custom"><img src="/public/cms/img/del.png"></span>
             <div class="text">Удалить выделенное</div>
         </div>
     </div>
 </div>
 <div id="menu">
     <a href="/admin/static"><div class="block">
-            <p><span class="glyphicon glyphicon-menu"><img src="/public/img/admin/static.png"></span>Материалы</p>
+            <p><span class="glyphicon glyphicon-menu"><img src="/public/cms/img/static.png"></span>Материалы</p>
         </div></a>
     <a href="/admin/album"><div class="block">
-            <p><span class="glyphicon glyphicon-menu"><img src="/public/img/admin/album.png"></span>Галерея</p>
+            <p><span class="glyphicon glyphicon-menu"><img src="/public/cms/img/album.png"></span>Галерея</p>
     </div></a>
 </div>
 <div id="main">
@@ -76,7 +76,7 @@
         <div class="block_">
             <div class="input-group">
                 <input id="create_catalog" type="text" class="form-control" placeholder="Создать раздел">
-                <span class="input-group-addon glyphicon custom-glyphicon-enter"><img src="/public/img/admin/enter.png"></span>
+                <span class="input-group-addon glyphicon custom-glyphicon-enter"><img src="/public/cms/img/enter.png"></span>
             </div>
         </div>
         <div class="dynamic_section">
@@ -118,7 +118,7 @@
 <script src="/public/vendor/fileupl/jquery.fileupload.js"></script>
 
 <!-- JavaScript Includes -->
-<link rel="stylesheet" href="/public/css/album.css"/>
+<link rel="stylesheet" href="/public/css/admin/album.css"/>
 
 <script src="/public/vendor/fileupl/jquery.knob.js"></script>
 
@@ -129,7 +129,7 @@
 
 
 <script type="text/javascript" src="/public/vendor/jquery.sortable.min.js"></script>
-<script src="/public/js/album.js"></script>
+<script src="/public/cms/js/album.js"></script>
 
 
 

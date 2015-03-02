@@ -48,17 +48,18 @@
         </table>
     </div>
     <div id="header_content">
-        <div class="block" id="material_new"><span class="glyphicon glyphicon-custom"><img src="/public/img/admin/add.png"></span><div class="text">Новый</div></div>
-        <div class="block" id="material_save"><span class="glyphicon glyphicon-custom"><img src="/public/img/admin/ok.png"></span><div class="text">Сохранить</div></div>
-        <div class="block" id="material_delete"><span class="glyphicon glyphicon-custom"><img src="/public/img/admin/del.png"></span><div class="text">Удалить</div></div>
+        <div class="block" id="material_new"><span class="glyphicon glyphicon-custom"><img src="/public/cms/img/add.png"></span><div class="text">Новый</div></div>
+        <div class="block" id="material_save"><span class="glyphicon glyphicon-custom"><img src="/public/cms/img/ok.png"></span><div class="text">Сохранить</div></div>
+        <div class="block" id="material_delete"><span class="glyphicon glyphicon-custom"><img src="/public/cms/img/del.png"></span><div class="text">Удалить</div></div>
+      <a href="/ru/logout"><div class="block logout"><span class="glyphicon glyphicon-custom"><img src="/public/cms/img/logout.png"></span><div class="text">Выход</div></div></a>
     </div>
 </div>
 <div id="menu">
     <a href="/admin/static"><div class="block">
-            <p><span class="glyphicon glyphicon-menu"><img src="/public/img/admin/static.png"></span>Материалы</p>
+            <p><span class="glyphicon glyphicon-menu"><img src="/public/cms/img/static.png"></span>Материалы</p>
         </div></a>
     <a href="/admin/album"><div class="block">
-            <p><span class="glyphicon glyphicon-menu"><img src="/public/img/admin/album.png"></span>Галерея</p>
+            <p><span class="glyphicon glyphicon-menu"><img src="/public/cms/img/album.png"></span>Галерея</p>
         </div></a>
 </div>
 <div id="main">
@@ -76,7 +77,7 @@
         <div class="block_">
             <div class="input-group">
                 <input id="create_catalog" type="text" class="form-control" placeholder="Создать раздел">
-                <span class="input-group-addon glyphicon custom-glyphicon-enter"><img src="/public/img/admin/enter.png"></span>
+                <span class="input-group-addon glyphicon custom-glyphicon-enter"><img src="/public/cms/img/enter.png"></span>
             </div>
         </div>
         <div class="dynamic_section">
@@ -88,16 +89,16 @@
                             <a class="catalog_link" data-id="<?=$tr->id?>"><p><?=$tr->name?></p><input type="text" class="form-control"></a>
                         </td>
                         <td class="icon-edit">
-                            <a class="save" data-id="<?=$tr->id?>"><span class="glyphicon flaticon"><img src="/public/img/admin/check13.png"></span></a>
+                            <a class="save" data-id="<?=$tr->id?>"><span class="glyphicon flaticon"><img src="/public/cms/img/check13.png"></span></a>
                         </td>
                         <td class="icon-edit">
-                            <a class="cancel" data-id="<?=$tr->id?>"><span class="glyphicon flaticon"><img src="/public/img/admin/close11.png"></span></a>
+                            <a class="cancel" data-id="<?=$tr->id?>"><span class="glyphicon flaticon"><img src="/public/cms/img/close11.png"></span></a>
                         </td>
                         <td class="icon-add">
-                            <a class="edit" data-id="<?=$tr->id?>"><span class="glyphicon flaticon"><img src="/public/img/admin/note6.png"></span></a>
+                            <a class="edit" data-id="<?=$tr->id?>"><span class="glyphicon flaticon"><img src="/public/cms/img/note6.png"></span></a>
                         </td>
                         <td class="icon-add">
-                            <a class="delete" data-id="<?=$tr->id?>"><span class="glyphicon flaticon"><img src="/public/img/admin/waste2.png"></span></a>
+                            <a class="delete" data-id="<?=$tr->id?>"><span class="glyphicon flaticon"><img src="/public/cms/img/waste2.png"></span></a>
                         </td>
                     </tr>
                 </table>
@@ -126,12 +127,10 @@
 
 <link href="/public/vendor/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet" type="text/css"/>
 <link href="/public/vendor/datepicker3/css/datepicker3.css" rel="stylesheet" type="text/css"/>
-<link href="/public/vendor/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css"/>
 <script src="/public/vendor/datepicker3/js/bootstrap-datepicker.js"></script>
 <script src="/public/vendor/datepicker3/js/locales/bootstrap-datepicker.ru.js"></script>
-<script src="/public/vendor/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
 <script src="/public/vendor/typeahead.0.9.3.min.js"></script>
 <script src="/public/vendor/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
 <script src="/public/vendor/ckeditor/ckeditor.js"></script>
-<script src="/public/js/bootstrap.file-input.js" type="text/javascript"></script>
-<script src="/public/js/static.js" type="text/javascript"></script>
+<script src="/public/cms/js/bootstrap.file-input.js" type="text/javascript"></script>
+<script src="/public/cms/js/static.js" type="text/javascript"></script>

@@ -2,4 +2,8 @@
 *.idea/*
 *system/*
 public/vendor/ckeditor_/
-public/vendor/ckeditor_/*
+public/vendor/ckeditor/*
+
+public/img/*
+
+application/views/themes/*

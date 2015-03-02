@@ -1,28 +1,36 @@
-<FilesMatch "\.md5$">
-    Deny from all
-</FilesMatch>
+RewriteEngine On
 
-DirectoryIndex index.html index.php
+DirectoryIndex index.php index.html
 
-#Options -Indexes
-# Comment the following line, if option Multiviews not allowed here
-#Options -MultiViews
+RewriteBase /
+
+Options -Indexes
+Options -MultiViews
 
 AddDefaultCharset utf-8
-
-<ifModule mod_rewrite.c>
-    RewriteEngine On
-    # Uncomment the following line, if you are having trouble
-    #RewriteBase /
-
-    RewriteCond %{REQUEST_URI} !\.(js|css|jpg|jpeg|gif|png)$
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ index.php [L,QSA]
-</ifModule>
 
 <ifModule mod_headers.c>
     <FilesMatch "\.(jpg|jpeg|png|gif|js|css)$">
 	Header set Cache-Control "max-age=3153600, public"
     </FilesMatch>
 </ifModule>
+
+<FilesMatch "\.md5$">
+    Deny from all
+</FilesMatch>
+
+<Files .*>
+	Order Deny,Allow
+	Deny From All
+</Files>
+
+# Protect application and system files from being viewed
+RewriteRule ^(?:application|modules|system)\b.* index.php/$0 [L]
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_URI} !\.(js|css|jpg|jpeg|gif|png)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all other URLs to index.php/URL
+RewriteRule .* index.php/$0 [PT]

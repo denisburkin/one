@@ -1,1 +1,0 @@
-<label class="chckbx"><span><?=$helper?>: </span><input id="<?=$id?>" class="form-control<?=isset($class)?' '.$class:''?>" type="checkbox" name="<?=$id?>" value="<?=$value?>"<?=($static->$id == $value)?' checked="checked"':''?>/></label>
