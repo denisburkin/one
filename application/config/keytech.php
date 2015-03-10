@@ -31,6 +31,7 @@ return
 		),
 		'layout' => array
 		(
-			1 => 'themes/eurofish/index'
+			1 => 'themes/eurofish/index',
+			2 => 'themes/eurofish/pages'
 		)
 	);

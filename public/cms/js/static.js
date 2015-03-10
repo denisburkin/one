@@ -239,14 +239,14 @@ function material_edit()
             $html += '<table cellspacing="0" cellpadding="0" border="0" style="width: 100%"><tr><td>';
             $html += data[0];
             $html += data[2];
-            $html += '</td><td class="langTd"><img class="langTab" data-id="" src="/public/cms/img/RU.jpg"></td><td class="langTd"><img class="langTab" data-id="_en" src="/public/cms/img/EN.jpg"></td><td class="configTd"><a id="config_btn"><span class="glyphicon glyphicon-cog"></span></a></td></tr></table>';
+            $html += '</td><td class="langTd"><img class="langTab" data-id="" src="/public/cms/img/ru.jpg"></td><td class="langTd"><img class="langTab" data-id="_en" src="/public/cms/img/en.jpg"></td><td class="configTd"><a id="config_btn"><span class="glyphicon glyphicon-cog"></span></a></td></tr></table>';
         }
         else
         {
             $html += '<table cellspacing="0" cellpadding="0" border="0" style="width: 100%"><tr><td>';
             $html += data[0];
             $html += data[2];
-            $html += '</td><td class="langTd"><img class="langTab" data-id="" src="/public/cms/img/RU.jpg"></td><td class="langTd"><img class="langTab" data-id="_en" src="/public/cms/img/EN.jpg"></td></tr></table>';
+            $html += '</td><td class="langTd"><img class="langTab" data-id="" src="/public/cms/img/ru.jpg"></td><td class="langTd"><img class="langTab" data-id="_en" src="/public/cms/img/en.jpg"></td></tr></table>';
         }
         $html += '<hr>' + data[1] + data[3];
         if(data.length > 4)

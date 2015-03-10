@@ -4,7 +4,7 @@ class Controller_Static extends Keytech
 {
 	public $view = 'static/view';
 	public $template = 'themes/ds/layout';
-	public $layout = 1;
+	public $layout = 2;
 
 	public function action_index()
 	{
@@ -18,7 +18,7 @@ class Controller_Static extends Keytech
 			throw new HTTP_Exception_404('Error 404');
 		}
 
-		$this->layout         = ( ($config = Kohana::$config->load('static.' . $static->tree_id . '.layout') ) ? $config : 1);
+		$this->layout         = ( ($config = Kohana::$config->load('static.' . $static->tree_id . '.layout') ) ? $config : 2);
 		$this->title          = (empty($static->titleseo)) ? $static->title : $static->titleseo;
 		$this->keywords       = $static->keywords;
 		$this->description    = $static->description;
